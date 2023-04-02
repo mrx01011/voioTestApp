@@ -7,9 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5DAD538D94C8997034A72C19 /* Pods_voioTestApp_voioTestAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8CA3A0B38CBD618BEB30D61 /* Pods_voioTestApp_voioTestAppUITests.framework */; };
+		A5A160908F6C76B15C5F0CC2 /* Pods_voioTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F06DE87039BABDB249779AAA /* Pods_voioTestApp.framework */; };
+		EB00F35A10AF0C53EDC1E55A /* Pods_voioTestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D80B105A85C16723B859B994 /* Pods_voioTestAppTests.framework */; };
 		FB6616FC29D4901D00BA2B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */; };
 		FB6616FE29D4901D00BA2B3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */; };
-		FB66170029D4901D00BA2B3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FF29D4901D00BA2B3B /* ViewController.swift */; };
+		FB66170029D4901D00BA2B3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FF29D4901D00BA2B3B /* TabBarController.swift */; };
 		FB66170329D4901D00BA2B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB66170129D4901D00BA2B3B /* Main.storyboard */; };
 		FB66170629D4901D00BA2B3B /* voioTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB66170429D4901D00BA2B3B /* voioTestApp.xcdatamodeld */; };
 		FB66170829D4902100BA2B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB66170729D4902100BA2B3B /* Assets.xcassets */; };
@@ -17,6 +20,25 @@
 		FB66171629D4902200BA2B3B /* voioTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66171529D4902200BA2B3B /* voioTestAppTests.swift */; };
 		FB66172029D4902200BA2B3B /* voioTestAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66171F29D4902200BA2B3B /* voioTestAppUITests.swift */; };
 		FB66172229D4902200BA2B3B /* voioTestAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66172129D4902200BA2B3B /* voioTestAppUITestsLaunchTests.swift */; };
+		FBB564CD29D568CC008814FE /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564CC29D568CC008814FE /* AuthorizationView.swift */; };
+		FBB564D229D5711B008814FE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564D129D5711B008814FE /* AuthViewController.swift */; };
+		FBB564D429D6C4FF008814FE /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564D329D6C4FF008814FE /* RegistrationViewController.swift */; };
+		FBB564D729D6C765008814FE /* FullNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564D629D6C765008814FE /* FullNameView.swift */; };
+		FBB564D929D79A90008814FE /* AgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564D829D79A90008814FE /* AgeView.swift */; };
+		FBB564DB29D7A6AF008814FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564DA29D7A6AF008814FE /* LoginView.swift */; };
+		FBB564DD29D7B9C1008814FE /* ProfilePictureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564DC29D7B9C1008814FE /* ProfilePictureView.swift */; };
+		FBB564DF29D829CA008814FE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564DE29D829CA008814FE /* HomeViewController.swift */; };
+		FBB564E229D830CE008814FE /* FilmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564E129D830CE008814FE /* FilmTableViewCell.swift */; };
+		FBB564E429D86962008814FE /* DetailFilmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564E329D86962008814FE /* DetailFilmViewController.swift */; };
+		FBB564E729D87E06008814FE /* FavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564E629D87E06008814FE /* FavouritesViewController.swift */; };
+		FBB564E929D8809E008814FE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564E829D8809E008814FE /* ProfileViewController.swift */; };
+		FBB564EC29D8A30B008814FE /* String + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564EB29D8A30B008814FE /* String + Extension.swift */; };
+		FBB564EF29D8BA34008814FE /* RegistrationFieldsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564EE29D8BA34008814FE /* RegistrationFieldsManager.swift */; };
+		FBB564F229D97494008814FE /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564F129D97494008814FE /* UserDefaultsManager.swift */; };
+		FBB564F529D974B7008814FE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB564F429D974B7008814FE /* UserModel.swift */; };
+		FBC0C96529D9CCF30020DEE3 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96429D9CCF30020DEE3 /* FilmModel.swift */; };
+		FBC0C96829D9D8780020DEE3 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96729D9D8780020DEE3 /* NetworkRequest.swift */; };
+		FBC0C96A29D9DBE80020DEE3 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96929D9DBE80020DEE3 /* NetworkDataFetch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +59,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A73DFDF242465401D7F21D3 /* Pods-voioTestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestAppTests.debug.xcconfig"; path = "Target Support Files/Pods-voioTestAppTests/Pods-voioTestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2614891EA33E18D813B9E1EA /* Pods-voioTestApp-voioTestAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestApp-voioTestAppUITests.release.xcconfig"; path = "Target Support Files/Pods-voioTestApp-voioTestAppUITests/Pods-voioTestApp-voioTestAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		55B982850EC50816752B78B6 /* Pods-voioTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestApp.debug.xcconfig"; path = "Target Support Files/Pods-voioTestApp/Pods-voioTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CEC72899E7984C9D1B1BF7F1 /* Pods-voioTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestApp.release.xcconfig"; path = "Target Support Files/Pods-voioTestApp/Pods-voioTestApp.release.xcconfig"; sourceTree = "<group>"; };
+		D80B105A85C16723B859B994 /* Pods_voioTestAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voioTestAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEF4FB3E8DE7CF6C95466547 /* Pods-voioTestApp-voioTestAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestApp-voioTestAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-voioTestApp-voioTestAppUITests/Pods-voioTestApp-voioTestAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E77FB6268ABCD1FFCF634C2C /* Pods-voioTestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-voioTestAppTests.release.xcconfig"; path = "Target Support Files/Pods-voioTestAppTests/Pods-voioTestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		F06DE87039BABDB249779AAA /* Pods_voioTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voioTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8CA3A0B38CBD618BEB30D61 /* Pods_voioTestApp_voioTestAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_voioTestApp_voioTestAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6616F829D4901D00BA2B3B /* voioTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = voioTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB6616FF29D4901D00BA2B3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB6616FF29D4901D00BA2B3B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		FB66170229D4901D00BA2B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB66170529D4901D00BA2B3B /* voioTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = voioTestApp.xcdatamodel; sourceTree = "<group>"; };
 		FB66170729D4902100BA2B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +82,25 @@
 		FB66171B29D4902200BA2B3B /* voioTestAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = voioTestAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB66171F29D4902200BA2B3B /* voioTestAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voioTestAppUITests.swift; sourceTree = "<group>"; };
 		FB66172129D4902200BA2B3B /* voioTestAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = voioTestAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBB564CC29D568CC008814FE /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
+		FBB564D129D5711B008814FE /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FBB564D329D6C4FF008814FE /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		FBB564D629D6C765008814FE /* FullNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullNameView.swift; sourceTree = "<group>"; };
+		FBB564D829D79A90008814FE /* AgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeView.swift; sourceTree = "<group>"; };
+		FBB564DA29D7A6AF008814FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		FBB564DC29D7B9C1008814FE /* ProfilePictureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureView.swift; sourceTree = "<group>"; };
+		FBB564DE29D829CA008814FE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FBB564E129D830CE008814FE /* FilmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTableViewCell.swift; sourceTree = "<group>"; };
+		FBB564E329D86962008814FE /* DetailFilmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFilmViewController.swift; sourceTree = "<group>"; };
+		FBB564E629D87E06008814FE /* FavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesViewController.swift; sourceTree = "<group>"; };
+		FBB564E829D8809E008814FE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FBB564EB29D8A30B008814FE /* String + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extension.swift"; sourceTree = "<group>"; };
+		FBB564EE29D8BA34008814FE /* RegistrationFieldsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationFieldsManager.swift; sourceTree = "<group>"; };
+		FBB564F129D97494008814FE /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		FBB564F429D974B7008814FE /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		FBC0C96429D9CCF30020DEE3 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
+		FBC0C96729D9D8780020DEE3 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		FBC0C96929D9DBE80020DEE3 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5A160908F6C76B15C5F0CC2 /* Pods_voioTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB00F35A10AF0C53EDC1E55A /* Pods_voioTestAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +124,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DAD538D94C8997034A72C19 /* Pods_voioTestApp_voioTestAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17674294FE43D036B45E8FBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B982850EC50816752B78B6 /* Pods-voioTestApp.debug.xcconfig */,
+				CEC72899E7984C9D1B1BF7F1 /* Pods-voioTestApp.release.xcconfig */,
+				DEF4FB3E8DE7CF6C95466547 /* Pods-voioTestApp-voioTestAppUITests.debug.xcconfig */,
+				2614891EA33E18D813B9E1EA /* Pods-voioTestApp-voioTestAppUITests.release.xcconfig */,
+				0A73DFDF242465401D7F21D3 /* Pods-voioTestAppTests.debug.xcconfig */,
+				E77FB6268ABCD1FFCF634C2C /* Pods-voioTestAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		368A2742BE5AB30B90A5BA41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06DE87039BABDB249779AAA /* Pods_voioTestApp.framework */,
+				F8CA3A0B38CBD618BEB30D61 /* Pods_voioTestApp_voioTestAppUITests.framework */,
+				D80B105A85C16723B859B994 /* Pods_voioTestAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB6616EF29D4901D00BA2B3B = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +161,8 @@
 				FB66171429D4902200BA2B3B /* voioTestAppTests */,
 				FB66171E29D4902200BA2B3B /* voioTestAppUITests */,
 				FB6616F929D4901D00BA2B3B /* Products */,
+				17674294FE43D036B45E8FBA /* Pods */,
+				368A2742BE5AB30B90A5BA41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,13 +179,17 @@
 		FB6616FA29D4901D00BA2B3B /* voioTestApp */ = {
 			isa = PBXGroup;
 			children = (
-				FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */,
-				FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */,
-				FB6616FF29D4901D00BA2B3B /* ViewController.swift */,
+				FBB564F329D974A7008814FE /* Models */,
+				FBB564ED29D8B9CD008814FE /* Managers */,
+				FBB564EA29D8A2F4008814FE /* Extensions */,
+				FBB564E029D8304F008814FE /* Cells */,
+				FBB564CB29D5685C008814FE /* Views */,
+				FBC0C96629D9D84E0020DEE3 /* Network */,
+				FBB564CA29D567ED008814FE /* Resources */,
+				FB66178829D4BFA800BA2B3B /* Controllers */,
+				FB66178729D4BF7200BA2B3B /* Application */,
+				FBB564F029D972F9008814FE /* Services */,
 				FB66170129D4901D00BA2B3B /* Main.storyboard */,
-				FB66170729D4902100BA2B3B /* Assets.xcassets */,
-				FB66170929D4902100BA2B3B /* LaunchScreen.storyboard */,
-				FB66170C29D4902100BA2B3B /* Info.plist */,
 				FB66170429D4901D00BA2B3B /* voioTestApp.xcdatamodeld */,
 			);
 			path = voioTestApp;
@@ -130,6 +212,117 @@
 			path = voioTestAppUITests;
 			sourceTree = "<group>";
 		};
+		FB66178729D4BF7200BA2B3B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */,
+				FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		FB66178829D4BFA800BA2B3B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564E529D87DBB008814FE /* Authorization */,
+				FB6616FF29D4901D00BA2B3B /* TabBarController.swift */,
+				FBB564DE29D829CA008814FE /* HomeViewController.swift */,
+				FBB564E329D86962008814FE /* DetailFilmViewController.swift */,
+				FBB564E629D87E06008814FE /* FavouritesViewController.swift */,
+				FBB564E829D8809E008814FE /* ProfileViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FBB564CA29D567ED008814FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FB66170729D4902100BA2B3B /* Assets.xcassets */,
+				FB66170929D4902100BA2B3B /* LaunchScreen.storyboard */,
+				FB66170C29D4902100BA2B3B /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FBB564CB29D5685C008814FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564D529D6C574008814FE /* RegistrationViews */,
+				FBB564CC29D568CC008814FE /* AuthorizationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBB564D529D6C574008814FE /* RegistrationViews */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564DC29D7B9C1008814FE /* ProfilePictureView.swift */,
+				FBB564D629D6C765008814FE /* FullNameView.swift */,
+				FBB564D829D79A90008814FE /* AgeView.swift */,
+				FBB564DA29D7A6AF008814FE /* LoginView.swift */,
+			);
+			path = RegistrationViews;
+			sourceTree = "<group>";
+		};
+		FBB564E029D8304F008814FE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564E129D830CE008814FE /* FilmTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FBB564E529D87DBB008814FE /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564D129D5711B008814FE /* AuthViewController.swift */,
+				FBB564D329D6C4FF008814FE /* RegistrationViewController.swift */,
+			);
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		FBB564EA29D8A2F4008814FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564EB29D8A30B008814FE /* String + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FBB564ED29D8B9CD008814FE /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564EE29D8BA34008814FE /* RegistrationFieldsManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FBB564F029D972F9008814FE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564F129D97494008814FE /* UserDefaultsManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FBB564F329D974A7008814FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBB564F429D974B7008814FE /* UserModel.swift */,
+				FBC0C96429D9CCF30020DEE3 /* FilmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FBC0C96629D9D84E0020DEE3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FBC0C96729D9D8780020DEE3 /* NetworkRequest.swift */,
+				FBC0C96929D9DBE80020DEE3 /* NetworkDataFetch.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +330,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB66172529D4902200BA2B3B /* Build configuration list for PBXNativeTarget "voioTestApp" */;
 			buildPhases = (
+				004F4A6BB8E0CF5C779379DB /* [CP] Check Pods Manifest.lock */,
 				FB6616F429D4901D00BA2B3B /* Sources */,
 				FB6616F529D4901D00BA2B3B /* Frameworks */,
 				FB6616F629D4901D00BA2B3B /* Resources */,
+				EF8CEC64886EC1DA3C984D5D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +349,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB66172829D4902200BA2B3B /* Build configuration list for PBXNativeTarget "voioTestAppTests" */;
 			buildPhases = (
+				32E8FBBAD155B0935C809E35 /* [CP] Check Pods Manifest.lock */,
 				FB66170D29D4902200BA2B3B /* Sources */,
 				FB66170E29D4902200BA2B3B /* Frameworks */,
 				FB66170F29D4902200BA2B3B /* Resources */,
@@ -172,9 +368,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB66172B29D4902200BA2B3B /* Build configuration list for PBXNativeTarget "voioTestAppUITests" */;
 			buildPhases = (
+				4C395BD1459B83DEF36302C6 /* [CP] Check Pods Manifest.lock */,
 				FB66171729D4902200BA2B3B /* Sources */,
 				FB66171829D4902200BA2B3B /* Frameworks */,
 				FB66171929D4902200BA2B3B /* Resources */,
+				9EC95D312E7CEC4C382474FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -256,15 +454,137 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		004F4A6BB8E0CF5C779379DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voioTestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32E8FBBAD155B0935C809E35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voioTestAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C395BD1459B83DEF36302C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-voioTestApp-voioTestAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC95D312E7CEC4C382474FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voioTestApp-voioTestAppUITests/Pods-voioTestApp-voioTestAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voioTestApp-voioTestAppUITests/Pods-voioTestApp-voioTestAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voioTestApp-voioTestAppUITests/Pods-voioTestApp-voioTestAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF8CEC64886EC1DA3C984D5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voioTestApp/Pods-voioTestApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-voioTestApp/Pods-voioTestApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-voioTestApp/Pods-voioTestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB6616F429D4901D00BA2B3B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB66170029D4901D00BA2B3B /* ViewController.swift in Sources */,
+				FB66170029D4901D00BA2B3B /* TabBarController.swift in Sources */,
+				FBB564EF29D8BA34008814FE /* RegistrationFieldsManager.swift in Sources */,
+				FBB564E429D86962008814FE /* DetailFilmViewController.swift in Sources */,
 				FB6616FC29D4901D00BA2B3B /* AppDelegate.swift in Sources */,
+				FBC0C96529D9CCF30020DEE3 /* FilmModel.swift in Sources */,
+				FBB564E729D87E06008814FE /* FavouritesViewController.swift in Sources */,
+				FBB564F229D97494008814FE /* UserDefaultsManager.swift in Sources */,
+				FBB564D429D6C4FF008814FE /* RegistrationViewController.swift in Sources */,
+				FBC0C96A29D9DBE80020DEE3 /* NetworkDataFetch.swift in Sources */,
+				FBC0C96829D9D8780020DEE3 /* NetworkRequest.swift in Sources */,
+				FBB564CD29D568CC008814FE /* AuthorizationView.swift in Sources */,
+				FBB564E929D8809E008814FE /* ProfileViewController.swift in Sources */,
+				FBB564D229D5711B008814FE /* AuthViewController.swift in Sources */,
 				FB66170629D4901D00BA2B3B /* voioTestApp.xcdatamodeld in Sources */,
+				FBB564D929D79A90008814FE /* AgeView.swift in Sources */,
+				FBB564DD29D7B9C1008814FE /* ProfilePictureView.swift in Sources */,
 				FB6616FE29D4901D00BA2B3B /* SceneDelegate.swift in Sources */,
+				FBB564DB29D7A6AF008814FE /* LoginView.swift in Sources */,
+				FBB564EC29D8A30B008814FE /* String + Extension.swift in Sources */,
+				FBB564E229D830CE008814FE /* FilmTableViewCell.swift in Sources */,
+				FBB564D729D6C765008814FE /* FullNameView.swift in Sources */,
+				FBB564F529D974B7008814FE /* UserModel.swift in Sources */,
+				FBB564DF29D829CA008814FE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +756,7 @@
 		};
 		FB66172629D4902200BA2B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55B982850EC50816752B78B6 /* Pods-voioTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,12 +764,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C4CX4LW72;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = voioTestApp/Info.plist;
+				INFOPLIST_FILE = voioTestApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,14 +778,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavnh.voioTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FB66172729D4902200BA2B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CEC72899E7984C9D1B1BF7F1 /* Pods-voioTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,12 +797,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9C4CX4LW72;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = voioTestApp/Info.plist;
+				INFOPLIST_FILE = voioTestApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -484,14 +811,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.vladyslavnh.voioTestApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		FB66172929D4902200BA2B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A73DFDF242465401D7F21D3 /* Pods-voioTestAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +843,7 @@
 		};
 		FB66172A29D4902200BA2B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E77FB6268ABCD1FFCF634C2C /* Pods-voioTestAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +864,7 @@
 		};
 		FB66172C29D4902200BA2B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF4FB3E8DE7CF6C95466547 /* Pods-voioTestApp-voioTestAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +883,7 @@
 		};
 		FB66172D29D4902200BA2B3B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2614891EA33E18D813B9E1EA /* Pods-voioTestApp-voioTestAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
