@@ -9,7 +9,7 @@ import UIKit
 import SnapKit
 
 final class DetailFilmViewController: UIViewController {
-    private var filmURL = ""
+    private var FilmStringUrl = ""
     //MARK: UI elements
     private let filmLogo = UIImageView()
     private let nameLabel: UILabel = {
@@ -37,10 +37,11 @@ final class DetailFilmViewController: UIViewController {
         label.font = .systemFont(ofSize: 16)
         return label
     }()
-    private let descriotionLabel: UITextView = {
+    private let descriotionTextView: UITextView = {
         let textView = UITextView()
         textView.text = "Description"
         textView.textColor = .black
+        textView.isEditable = false
         textView.font = .systemFont(ofSize: 16)
         return textView
     }()
@@ -53,10 +54,10 @@ final class DetailFilmViewController: UIViewController {
     //MARK: Initialization
     init(film: Film) {
         super.init(nibName: nil, bundle: nil)
-        filmURL = film.collectionViewURL ?? ""
+        FilmStringUrl = film.collectionViewURL ?? ""
         nameLabel.text = film.trackName
         genreLabel.text = film.primaryGenreName
-        descriotionLabel.text = film.longDescription
+        descriotionTextView.text = film.longDescription
         // setup image view
         if let urlString = film.artworkUrl100 {
             NetworkRequest.shared.requestData(urlString: urlString) { [weak self] result in
@@ -111,7 +112,7 @@ final class DetailFilmViewController: UIViewController {
         view.addSubview(nameLabel)
         view.addSubview(filmLogo)
         view.addSubview(genreLabel)
-        view.addSubview(descriotionLabel)
+        view.addSubview(descriotionTextView)
         // film name
         nameLabel.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide).offset(5)
@@ -135,7 +136,7 @@ final class DetailFilmViewController: UIViewController {
             make.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(16)
         }
         // film description
-        descriotionLabel.snp.makeConstraints { make in
+        descriotionTextView.snp.makeConstraints { make in
             make.top.equalTo(filmLogo.snp.bottom).offset(5)
             make.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(16)
             make.bottom.equalTo(view.safeAreaLayoutGuide)
@@ -143,7 +144,8 @@ final class DetailFilmViewController: UIViewController {
     }
     
     @objc private func shareConvertedInfo() {
-        if !filmURL.isEmpty {
+        if !FilmStringUrl.isEmpty {
+            guard let filmURL = URL(string: FilmStringUrl) else { return }
             let activityViewController = UIActivityViewController(activityItems: [filmURL], applicationActivities: nil)
             self.present(activityViewController, animated: true)
         } else {

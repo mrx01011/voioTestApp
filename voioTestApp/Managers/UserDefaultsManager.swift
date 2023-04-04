@@ -70,7 +70,7 @@ class UserDefaultsManager {
             activeUser = updatedUser
         }
     }
-
+    
     func deleteFavouriteFilm(_ film: Film) {
         if let favourites = activeUser?.favouritesFilms,
            let currentUser = activeUser {

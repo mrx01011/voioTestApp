@@ -123,12 +123,12 @@ final class RegistrationViewController: UIViewController {
             && email.isValid(.email)
             && password.isValid(.password) {
             UserDefaultsManager.shared.saveUser(firstName: firstName,
-                                     lastName: lastName,
-                                     email: email,
-                                     password: password,
-                                     age: dateOfBirth,
-                                     avatarURL: avatarURL,
-                                     favouritesFilms: [Film]())
+                                                lastName: lastName,
+                                                email: email,
+                                                password: password,
+                                                age: dateOfBirth,
+                                                avatarURL: avatarURL,
+                                                favouritesFilms: [Film]())
             self.dismiss(animated: true)
         } else {
             alertOK(title: "Error", message: "All fields must be filled correctly")

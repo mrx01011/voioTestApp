@@ -20,7 +20,7 @@ class NetworkDataFetch {
                     let films = try JSONDecoder().decode(FilmModel.self, from: data)
                     response(films, nil)
                 } catch let jsonError {
-//                    print("Failed to decode JSON", jsonError)
+                    print("Failed to decode JSON", jsonError)
                 }
             case .failure(let error):
                 response(nil, error)
