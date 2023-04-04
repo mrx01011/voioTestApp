@@ -9,6 +9,13 @@ import UIKit
 import SnapKit
 
 final class FilmTableViewCell: UITableViewCell {
+    var favouritesButtonHandler: (() -> Void)?
+    var isFavourite = false {
+                didSet {
+                    let image = isFavourite ? UIImage(systemName: "heart.fill") : UIImage(systemName: "heart")
+                    favouriteButton.setImage(image, for: .normal)
+                }
+            }
     //MARK: UI elements
     private let filmNameLabel: UILabel = {
         let label = UILabel()
@@ -32,12 +39,19 @@ final class FilmTableViewCell: UITableViewCell {
         label.textColor = .black
         return label
     }()
+    private let favouriteButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(systemName: "heart"), for: .normal)
+        button.tintColor = .red
+        return button
+    }()
     private let filmLogo = UIImageView()
     //MARK: Initialization
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         defaultConfigurations()
         setupUI()
+        addTargets()
     }
     
     required init?(coder: NSCoder) {
@@ -77,7 +91,13 @@ final class FilmTableViewCell: UITableViewCell {
         selectionStyle = .none
     }
     
+    private func addTargets() {
+        favouriteButton.addTarget(self, action: #selector(favouriteButtonPressed), for: .touchUpInside)
+    }
+    
     private func setupUI() {
+        contentView.bringSubviewToFront(favouriteButton)
+        addSubview(favouriteButton)
         addSubview(filmNameLabel)
         addSubview(filmYearLabel)
         addSubview(filmGenreLabel)
@@ -98,5 +118,38 @@ final class FilmTableViewCell: UITableViewCell {
             make.verticalEdges.trailing.equalToSuperview()
             make.width.equalTo(100)
         }
+        favouriteButton.snp.makeConstraints { make in
+            make.height.width.equalTo(50)
+            make.bottom.equalToSuperview()
+            make.trailing.equalTo(filmLogo.snp.leading)
+        }
+    }
+    
+    @objc private func favouriteButtonPressed() {
+        favouritesButtonHandler?()
     }
 }
+//MARK: - Cell state
+//extension FilmTableViewCell {
+//    enum CellState {
+//        case favourite
+//        case notFavorite
+//    }
+//
+//    func applyState(state: CellState) {
+//        func applyFavouriteState() {
+//            favouriteButton.setImage(UIImage(systemName: "heart"), for: .normal)
+//        }
+//
+//        func applyNotFavouriteState() {
+//            favouriteButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+//        }
+//
+//        switch state {
+//        case .favourite:
+//            applyFavouriteState()
+//        case .notFavorite:
+//            applyNotFavouriteState()
+//        }
+//    }
+//}

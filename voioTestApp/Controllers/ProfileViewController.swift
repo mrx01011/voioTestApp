@@ -65,7 +65,7 @@ final class ProfileViewController: UIViewController {
     }
     
     private func setInfo() {
-        guard let activeUser = DataBase.shared.activeUser else { return }
+        guard let activeUser = UserDefaultsManager.shared.activeUser else { return }
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "dd.MM.yyyy"
         fullNameLabel.text = "\(activeUser.firstName) \(activeUser.lastName)"
@@ -76,7 +76,6 @@ final class ProfileViewController: UIViewController {
             let image = UIImage(data: imageData)
             profileImageView.image = image
         }
-        
     }
     
     private func setupUI() {

@@ -122,18 +122,16 @@ final class RegistrationViewController: UIViewController {
             && lastName.isValid(.name)
             && email.isValid(.email)
             && password.isValid(.password) {
-            DataBase.shared.saveUser(firstName: firstName,
+            UserDefaultsManager.shared.saveUser(firstName: firstName,
                                      lastName: lastName,
                                      email: email,
                                      password: password,
                                      age: dateOfBirth,
-                                     avatarURL: avatarURL)
+                                     avatarURL: avatarURL,
+                                     favouritesFilms: [Film]())
             self.dismiss(animated: true)
         } else {
-            let alert = UIAlertController(title: "Error", message: "All fields must be filled", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alert.addAction(okAction)
-            present(alert, animated: true)
+            alertOK(title: "Error", message: "All fields must be filled correctly")
         }
         
     }

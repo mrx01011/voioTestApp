@@ -14,4 +14,5 @@ struct User: Codable {
     let password: String
     let age: Date
     let avatarURL: URL?
+    let favouritesFilms: [Film]?
 }

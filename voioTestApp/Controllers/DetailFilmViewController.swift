@@ -9,6 +9,7 @@ import UIKit
 import SnapKit
 
 final class DetailFilmViewController: UIViewController {
+    private var filmURL = ""
     //MARK: UI elements
     private let filmLogo = UIImageView()
     private let nameLabel: UILabel = {
@@ -36,21 +37,27 @@ final class DetailFilmViewController: UIViewController {
         label.font = .systemFont(ofSize: 16)
         return label
     }()
-    private let descriotionLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Description"
-        label.textColor = .black
-        label.numberOfLines = 0
-        label.font = .systemFont(ofSize: 16)
-        return label
+    private let descriotionLabel: UITextView = {
+        let textView = UITextView()
+        textView.text = "Description"
+        textView.textColor = .black
+        textView.font = .systemFont(ofSize: 16)
+        return textView
+    }()
+    private let shareButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
+        button.tintColor = .systemBlue
+        return button
     }()
     //MARK: Initialization
     init(film: Film) {
         super.init(nibName: nil, bundle: nil)
+        filmURL = film.collectionViewURL ?? ""
         nameLabel.text = film.trackName
         genreLabel.text = film.primaryGenreName
         descriotionLabel.text = film.longDescription
-        
+        // setup image view
         if let urlString = film.artworkUrl100 {
             NetworkRequest.shared.requestData(urlString: urlString) { [weak self] result in
                 guard let self else { return }
@@ -65,7 +72,7 @@ final class DetailFilmViewController: UIViewController {
         } else {
             filmLogo.image = nil
         }
-        
+        // setup date label
         if let dateString = film.releaseDate {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss'Z'"
@@ -87,10 +94,16 @@ final class DetailFilmViewController: UIViewController {
         super.viewDidLoad()
         defaultConfigurations()
         setupUI()
+        addTargets()
     }
     //MARK: Methods
+    private func addTargets() {
+        shareButton.addTarget(self, action: #selector(shareConvertedInfo), for: .touchUpInside)
+    }
+    
     private func defaultConfigurations() {
         view.backgroundColor = .white
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: shareButton)
     }
     
     private func setupUI() {
@@ -125,6 +138,16 @@ final class DetailFilmViewController: UIViewController {
         descriotionLabel.snp.makeConstraints { make in
             make.top.equalTo(filmLogo.snp.bottom).offset(5)
             make.horizontalEdges.equalTo(view.safeAreaLayoutGuide).inset(16)
+            make.bottom.equalTo(view.safeAreaLayoutGuide)
+        }
+    }
+    
+    @objc private func shareConvertedInfo() {
+        if !filmURL.isEmpty {
+            let activityViewController = UIActivityViewController(activityItems: [filmURL], applicationActivities: nil)
+            self.present(activityViewController, animated: true)
+        } else {
+            alertOK(title: "Sorry", message: "Movie link not available")
         }
     }
 }

@@ -18,4 +18,9 @@ struct Film: Codable {
     let primaryGenreName: String?
     let longDescription: String?
     let collectionViewURL: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case trackName, artworkUrl100, releaseDate, primaryGenreName, longDescription
+        case collectionViewURL = "collectionViewUrl"
+    }
 }

@@ -26,10 +26,20 @@ final class HomeViewController: UIViewController {
         setupUI()
         setupDelegates()
         setupSearchController()
+        addObservers()
+        fetchFilms(filmName: "Movie")
     }
     //MARK: Methods
     private func defaultConfigurations() {
         view.backgroundColor = .white
+    }
+    
+    @objc func refreshTableView() {
+        self.tableView.reloadData()
+    }
+    
+    private func addObservers() {
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshTableView), name: NSNotification.Name(rawValue: "newDataNotif"), object: nil)
     }
     
     private func setupUI() {
@@ -59,8 +69,6 @@ final class HomeViewController: UIViewController {
                 guard let filmModel = filmModel else { return }
                 self.films = filmModel.results
                 self.tableView.reloadData()
-            } else {
-                print(error?.localizedDescription as Any)
             }
         }
     }
@@ -73,11 +81,23 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath) as? FilmTableViewCell else { return UITableViewCell() }
+        
         let film = films[indexPath.row]
         cell.configureFilmCell(film: film)
+        cell.isFavourite = UserDefaultsManager.shared.isFavouriteFilm(film)
+        cell.favouritesButtonHandler = {
+            if cell.isFavourite {
+                UserDefaultsManager.shared.deleteFavouriteFilm(film)
+                cell.isFavourite = false
+            } else {
+                UserDefaultsManager.shared.addFavouriteFilm(film)
+                cell.isFavourite = true
+            }
+            NotificationCenter.default.post(name: NSNotification.Name(rawValue: "newDataNotif"), object: nil)
+        }
         return cell
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }

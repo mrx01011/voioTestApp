@@ -13,8 +13,6 @@
 		FB6616FC29D4901D00BA2B3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */; };
 		FB6616FE29D4901D00BA2B3B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */; };
 		FB66170029D4901D00BA2B3B /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB6616FF29D4901D00BA2B3B /* TabBarController.swift */; };
-		FB66170329D4901D00BA2B3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB66170129D4901D00BA2B3B /* Main.storyboard */; };
-		FB66170629D4901D00BA2B3B /* voioTestApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB66170429D4901D00BA2B3B /* voioTestApp.xcdatamodeld */; };
 		FB66170829D4902100BA2B3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB66170729D4902100BA2B3B /* Assets.xcassets */; };
 		FB66170B29D4902100BA2B3B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB66170929D4902100BA2B3B /* LaunchScreen.storyboard */; };
 		FB66171629D4902200BA2B3B /* voioTestAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB66171529D4902200BA2B3B /* voioTestAppTests.swift */; };
@@ -39,6 +37,7 @@
 		FBC0C96529D9CCF30020DEE3 /* FilmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96429D9CCF30020DEE3 /* FilmModel.swift */; };
 		FBC0C96829D9D8780020DEE3 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96729D9D8780020DEE3 /* NetworkRequest.swift */; };
 		FBC0C96A29D9DBE80020DEE3 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C96929D9DBE80020DEE3 /* NetworkDataFetch.swift */; };
+		FBC0C97429DC69DE0020DEE3 /* UIViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC0C97329DC69DE0020DEE3 /* UIViewController + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +71,6 @@
 		FB6616FB29D4901D00BA2B3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB6616FD29D4901D00BA2B3B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FB6616FF29D4901D00BA2B3B /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		FB66170229D4901D00BA2B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FB66170529D4901D00BA2B3B /* voioTestApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = voioTestApp.xcdatamodel; sourceTree = "<group>"; };
 		FB66170729D4902100BA2B3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB66170A29D4902100BA2B3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB66170C29D4902100BA2B3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -101,6 +98,7 @@
 		FBC0C96429D9CCF30020DEE3 /* FilmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmModel.swift; sourceTree = "<group>"; };
 		FBC0C96729D9D8780020DEE3 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		FBC0C96929D9DBE80020DEE3 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		FBC0C97329DC69DE0020DEE3 /* UIViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,16 +179,11 @@
 			children = (
 				FBB564F329D974A7008814FE /* Models */,
 				FBB564ED29D8B9CD008814FE /* Managers */,
-				FBB564EA29D8A2F4008814FE /* Extensions */,
-				FBB564E029D8304F008814FE /* Cells */,
-				FBB564CB29D5685C008814FE /* Views */,
 				FBC0C96629D9D84E0020DEE3 /* Network */,
-				FBB564CA29D567ED008814FE /* Resources */,
 				FB66178829D4BFA800BA2B3B /* Controllers */,
+				FBB564EA29D8A2F4008814FE /* Extensions */,
 				FB66178729D4BF7200BA2B3B /* Application */,
-				FBB564F029D972F9008814FE /* Services */,
-				FB66170129D4901D00BA2B3B /* Main.storyboard */,
-				FB66170429D4901D00BA2B3B /* voioTestApp.xcdatamodeld */,
+				FBB564CA29D567ED008814FE /* Resources */,
 			);
 			path = voioTestApp;
 			sourceTree = "<group>";
@@ -224,7 +217,9 @@
 		FB66178829D4BFA800BA2B3B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FBB564CB29D5685C008814FE /* Views */,
 				FBB564E529D87DBB008814FE /* Authorization */,
+				FBB564E029D8304F008814FE /* Cells */,
 				FB6616FF29D4901D00BA2B3B /* TabBarController.swift */,
 				FBB564DE29D829CA008814FE /* HomeViewController.swift */,
 				FBB564E329D86962008814FE /* DetailFilmViewController.swift */,
@@ -285,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB564EB29D8A30B008814FE /* String + Extension.swift */,
+				FBC0C97329DC69DE0020DEE3 /* UIViewController + Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,16 +289,9 @@
 			isa = PBXGroup;
 			children = (
 				FBB564EE29D8BA34008814FE /* RegistrationFieldsManager.swift */,
-			);
-			path = Managers;
-			sourceTree = "<group>";
-		};
-		FBB564F029D972F9008814FE /* Services */ = {
-			isa = PBXGroup;
-			children = (
 				FBB564F129D97494008814FE /* UserDefaultsManager.swift */,
 			);
-			path = Services;
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		FBB564F329D974A7008814FE /* Models */ = {
@@ -434,7 +423,6 @@
 			files = (
 				FB66170B29D4902100BA2B3B /* LaunchScreen.storyboard in Resources */,
 				FB66170829D4902100BA2B3B /* Assets.xcassets in Resources */,
-				FB66170329D4901D00BA2B3B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB66170029D4901D00BA2B3B /* TabBarController.swift in Sources */,
+				FBC0C97429DC69DE0020DEE3 /* UIViewController + Extension.swift in Sources */,
 				FBB564EF29D8BA34008814FE /* RegistrationFieldsManager.swift in Sources */,
 				FBB564E429D86962008814FE /* DetailFilmViewController.swift in Sources */,
 				FB6616FC29D4901D00BA2B3B /* AppDelegate.swift in Sources */,
@@ -575,7 +564,6 @@
 				FBB564CD29D568CC008814FE /* AuthorizationView.swift in Sources */,
 				FBB564E929D8809E008814FE /* ProfileViewController.swift in Sources */,
 				FBB564D229D5711B008814FE /* AuthViewController.swift in Sources */,
-				FB66170629D4901D00BA2B3B /* voioTestApp.xcdatamodeld in Sources */,
 				FBB564D929D79A90008814FE /* AgeView.swift in Sources */,
 				FBB564DD29D7B9C1008814FE /* ProfilePictureView.swift in Sources */,
 				FB6616FE29D4901D00BA2B3B /* SceneDelegate.swift in Sources */,
@@ -621,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		FB66170129D4901D00BA2B3B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB66170229D4901D00BA2B3B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FB66170929D4902100BA2B3B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -765,9 +745,9 @@
 				DEVELOPMENT_TEAM = 9C4CX4LW72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = voioTestApp/Resources/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Application wants to use your photo library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -798,9 +778,9 @@
 				DEVELOPMENT_TEAM = 9C4CX4LW72;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = voioTestApp/Resources/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Application wants to use your photo library";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -940,19 +920,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		FB66170429D4901D00BA2B3B /* voioTestApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				FB66170529D4901D00BA2B3B /* voioTestApp.xcdatamodel */,
-			);
-			currentVersion = FB66170529D4901D00BA2B3B /* voioTestApp.xcdatamodel */;
-			path = voioTestApp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = FB6616F029D4901D00BA2B3B /* Project object */;
 }

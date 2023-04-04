@@ -57,10 +57,8 @@ final class AuthViewController: UIViewController {
 
 //MARK: - AuthorizationViewDelegate
 extension AuthViewController: AuthorizationViewDelegate {
-    
     private func findUserInBase(mail: String) -> User? {
-        let dataBase = DataBase.shared.users
-        print(dataBase)
+        guard let dataBase = UserDefaultsManager.shared.users else { return nil }
         
         for user in dataBase {
             if user.email == mail {
@@ -74,16 +72,14 @@ extension AuthViewController: AuthorizationViewDelegate {
         let user = findUserInBase(mail: mail)
         if user == nil || user?.password != password {
             let alert = UIAlertController(title: "Error", message: "Wrong email or password", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default)
-            alert.addAction(okAction)
-            present(alert, animated: true)
+            alertOK(title: "Error", message: "Wrong email or password")
         } else {
             let tabBarController = TabBarController()
             tabBarController.modalPresentationStyle = .fullScreen
             self.present(tabBarController, animated: true)
             
             guard let activeUser = user else { return }
-            DataBase.shared.saveActiveUser(user: activeUser)
+            UserDefaultsManager.shared.saveActiveUser(user: activeUser)
         }
     }
     
